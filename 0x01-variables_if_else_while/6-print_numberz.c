@@ -7,15 +7,15 @@
 int main(void)
 
 {
-int a, b;/*Decarling statement*/
+int a;/*Decarling statement*/
 
 /*for count*/
-for (a = 0; a < b; a++)
+for (a = 0; a < 10; a++)
 {
-printf("%d\n", a);/*print a*/
+putchar(a);/*print a*/
 }
 
-printf("\n"); /*new line*/
+putchar('\n'); /*new line*/
 
 return (0);
 
