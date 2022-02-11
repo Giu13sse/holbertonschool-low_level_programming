@@ -12,7 +12,7 @@ int a;/*Decarling statement*/
 /*for count*/
 for (a = 0; a < 10; a++)
 {
-putchar(a);/*print a*/
+putchar(a%10 + '0');/*print a*/
 }
 
 putchar('\n'); /*new line*/
