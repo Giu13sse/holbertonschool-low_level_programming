@@ -7,7 +7,7 @@
 int main(void)
 
 {
-int left; 
+int left; /*vars*/
 int right;
 int center;
 
@@ -21,26 +21,26 @@ for (right = center + 1 ; right <= 57; right++)
 
 {
 
-putchar(left); 
+putchar(left); /*printing*/
 putchar (center);
 putchar (right);
 
 /*break program*/
 if ((left == 55) && (center == left + 1) && (right == center + 1))
 {
-break; 
+break; /*break program*/
 }
 
-putchar(','); 
-putchar (' '); 
+putchar(','); /*printing*/
+putchar (' '); /*printing*/
 
-} 
+} /*end 2*/
 
-} 
+} /*end 1*/
 
-} 
+} /*end main*/
 
-putchar('\n'); 
+putchar('\n'); /*printing*/
 
 return (0);
 
