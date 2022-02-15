@@ -1,6 +1,6 @@
 #include<unistd.h>
 /**
-* main
+* main - prints a phras/e
 *
 * Return: returns 1
 */
