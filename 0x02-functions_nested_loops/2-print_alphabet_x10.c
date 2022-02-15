@@ -15,7 +15,7 @@ while (i <= 9)/*while */
 for (c = 'a'; c <= 'z'; c++)/*start for*/
 {
 _putchar(c);
-}/*ending for*/
+} /*ending for*/
 
 _putchar('\n');
 
