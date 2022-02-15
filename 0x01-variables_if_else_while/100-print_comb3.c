@@ -33,7 +33,7 @@ putchar (' ');/*printing space*/
 
 }
 
-putchar('\n'); 
+putchar('\n'); /*printing a new line */
 
 return (0);
 
