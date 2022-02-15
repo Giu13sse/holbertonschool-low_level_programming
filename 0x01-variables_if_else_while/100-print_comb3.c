@@ -7,7 +7,7 @@
 int main(void)
 
 {
-int number_left; 
+int number_left; /*variables*/
 int number_right;
 
 /*for 0-9 with ASCII*/
@@ -26,8 +26,8 @@ if ((number_left == 56) && (number_right == 57))
 break;
 }
 
-putchar(','); 
-putchar (' ');
+putchar(','); /*printing , */
+putchar (' ');/*printing space*/
 
 }
 
