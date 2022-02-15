@@ -22,5 +22,5 @@ count++;
 _putchar('\n'); /*new line*/
 } /*ending while*/
 
-return(0);/* 0*/
+return (0);/* 0*/
 }
