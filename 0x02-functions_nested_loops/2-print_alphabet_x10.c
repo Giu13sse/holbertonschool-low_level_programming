@@ -7,20 +7,20 @@
  */
 void print_alphabet_x10(void)
 {
-int alphabet; /*Declaring statements*/
+int alphabet; /*Declaring*/
 int count;
 
 count = 0;
-while (count < 10) /*Start while */
+while (count < 10) /*while */
 {
 for (alphabet = 'a' ; alphabet <= 'z'; alphabet++) /*start for*/
 {
 _putchar(alphabet);
-} /*end for*/
+} /*ending for*/
 
 count++;
 _putchar('\n'); /*new line*/
-} /*end while*/
+} /*ending while*/
 
-return (0);/*always 0*/
+return(0);/* 0*/
 }
