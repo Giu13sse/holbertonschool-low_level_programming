@@ -3,7 +3,7 @@
 /**
  * main - increasing and decreasing until 98
  *
- * Return: 0.
+ * Return:  0.
  */
 int main(void)
 {
@@ -13,7 +13,7 @@ a = 1;
 b = 2;
 r = a + b;
 
-printf("%lu, %lu,", a, b);
+printf("%lu, %lu, ", a, b);
 
 for (i = 0; i < 86; i++)
 {
@@ -40,7 +40,7 @@ r1 = a1 + b1 + (a2 + b2) / Z;
 r2 = (a2 + b2) % Z;
 }
 
-printf("%lu%lu, \n");
+printf("%lu%lu\n", r1, r2);
 
 return (0);
 
