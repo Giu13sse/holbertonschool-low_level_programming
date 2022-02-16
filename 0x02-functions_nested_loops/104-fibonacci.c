@@ -17,7 +17,7 @@ printf("%lu, %lu,", a, b);
 
 for (i = 0; i < 86; i++)
 {
-printf("%lu", r);
+printf("%lu,", r);
 a = b;
 b = r;
 r = a + b;
@@ -40,7 +40,7 @@ r1 = a1 + b1 + (a2 + b2) / Z;
 r2 = (a2 + b2) % Z;
 }
 
-printf("%lu%lu\n", r1, r2);
+printf("%lu%lu,\n", r1, r2);
 
 return (0);
 
