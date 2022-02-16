@@ -13,11 +13,11 @@ a = 1;
 b = 2;
 r = a + b;
 
-printf("%lu, %lu,", a,b);
+printf("%lu, %lu,", a, b);
 
 for (i = 0; i < 86; i++)
 {
-printf("%lu, ",r);
+printf("%lu, ", r);
 a = b;
 b = r;
 r = a + b;
@@ -30,7 +30,7 @@ r2 = r % Z;
 
 for (i = 0; i < 9; i++)
 {
-printf("%lu%lu, ", r1,r2);
+printf("%lu%lu, ", r1, r2);
 a1 = b1;
 a2 = b2;
 b1 = r1;
@@ -40,7 +40,7 @@ r1 = a1 + b1 + (a2 + b2) / Z;
 r2 = (a2 + b2) % Z;
 }
 
-printf("%lu%lu, \n", r1,r2);
+printf("%lu%lu, \n");
 
 return (0);
 
