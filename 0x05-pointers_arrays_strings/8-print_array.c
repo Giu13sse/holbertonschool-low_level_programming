@@ -23,7 +23,7 @@ printf(", ");
 }
 
 i++;
-}/*o while*/
+} /*o while*/
 
 printf("\n");
 }

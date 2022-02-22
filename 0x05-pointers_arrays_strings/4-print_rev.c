@@ -14,12 +14,12 @@ i = 0;
 while (s[i] != '\0') /*a while*/
 {
 i++;
-}/*o while*/
+} /*o while*/
 
 for (i = i - 1 ; i >= 0; i--) /*a for*/
 {
 _putchar (s[i]);
-}/*o for*/
+} /*o for*/
 
 _putchar ('\n');
 }

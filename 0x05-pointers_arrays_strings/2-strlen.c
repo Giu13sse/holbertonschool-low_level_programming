@@ -14,6 +14,6 @@ i = 0;
 while (s[i] != '\0') /*a while*/
 {
 i++;
-}/*o while*/
+} /*o while*/
 return (i);
 }

@@ -22,10 +22,10 @@ count = length; /*variable*/
 start_c = s;
 end_c = s;
 
-for (i = 0; i < count - 1; i++)/*a for*/
+for (i = 0; i < count - 1; i++) /*a for*/
 {
 end_c++;
-}/*o for*/
+} /*o for*/
 
 for (i = 0; i < count / 2; i++)/*a for*/
 {
@@ -34,5 +34,5 @@ c = *end_c;
 *start_c = c;
 start_c++;
 end_c--;
-}/*o for*/
+} /*o for*/
 }
