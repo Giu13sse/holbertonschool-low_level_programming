@@ -16,7 +16,7 @@ while (src[i] != '\0')/*a while*/
 {
 dest[i] = src[i];
 i++;
-}/*o while*/
+} /*o while*/
 dest[i] = '\0';
 return (dest);
 
