@@ -39,7 +39,7 @@ s2 = "";
 size = (_strlen(s1) + _strlen(s2) + 1);
 
 /*malloc*/
-dst = (char *) malloc(size * sizeof(char)); /*malloc*/
+dst = (char *) malloc(size *sizeof(char)); /*malloc*/
 
 if (dst == 0)
 {
