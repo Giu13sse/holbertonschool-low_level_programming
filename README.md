@@ -1,1 +1,2 @@
-First steps in low level programming.
+What are structures, when, why and how to use them
+How to use typedef
