@@ -1,4 +1,5 @@
 #include "lists.h"
+
 /**
  * print_listint_safe - prints list, avoids loop
  * @head: points to start of list
@@ -6,17 +7,24 @@
  */
 size_t print_listint_safe(const listint_t *head)
 {
-size_t pic = 0;
-const listint_t *aux_node = head;
-
-if (!head)
-exit(98);
-
-while (aux_node)
+/* declarations */
+size_t nodeCount = 0;
+/* check for null pointer */
+while (head)
 {
-printf("[%p] %i\n", (void *)aux_node, aux_node->n);
-aux_node = aux_node->next;
-pic++;
+printf("[%p] %d\n", (void *)head, head->n);
+nodeCount += 1;
+
+if (head > head->next)
+{
+head = head->next;
 }
-return (pic);
+else
+{
+head = head->next;
+printf("-> [%p] %d\n", (void *)head, head->n);
+break;
+}
+}
+return (nodeCount);
 }
