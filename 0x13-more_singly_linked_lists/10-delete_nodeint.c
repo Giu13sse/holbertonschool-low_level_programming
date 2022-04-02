@@ -1,45 +1,38 @@
 #include "lists.h"
-
 /**
- * insert_nodeint_at_index - inserts a new node at a given position
- * @head: pointer
- * @idx : ist where the new node should be added
- * @n : data of the list
- * Return: address of the new node, or NULL if it failed
+ * delete_nodeint_at_index - delete the node at index of a linked list
+ * @head: double pointer
+ * @index : index of the node that should be deleted
+ * Return: 1 if it succeeded, -1 if it failed
  */
-
-listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
+int delete_nodeint_at_index(listint_t **head, unsigned int index)
 {
-listint_t *new_node, *temp = *head;
+listint_t *start = *head, *temp;
 unsigned int i = 0;
 
-new_node = malloc(sizeof(listint_t));
+if (*head == NULL)
+return (-1);
 
-if (new_node == NULL)
-return (NULL);
-
-new_node->n = n;
-new_node->next = NULL;
-
-if (idx == 0)
+if (index == 0)
 {
-new_node->next = *head;
-*head = new_node;
-return (new_node);
+*head = start->next;
+free(start);
+return (1);
 }
 
-while (i < (idx - 1))
+while (start != NULL && i < (index - 1))
 {
-temp = temp->next;
-
-if (temp == NULL && (idx - i) > 0)
-return (NULL);
-
+start = start->next;
 i++;
 }
 
-new_node->next = temp->next;
-temp->next = new_node;
+if (start == NULL || start->next == NULL)
+return (-1);
 
-return (new_node);
+temp = start->next;
+start->next = temp->next;
+
+free(temp);
+
+return (1);
 }
